@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+.header {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.3% 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0 10%;
+}
+
+.loginCadastro {
+    display: flex;
+    justify-content: end;
+    width: 10%;
+
+}
+
+.loginCadastro span  {
+    margin-right: 10%;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
