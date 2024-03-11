@@ -1,15 +1,25 @@
 * {
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
+/* Bloco Header - Início */
+
 .header {
-    background-color: aqua;
+    background-color: rgb(42, 75, 133);
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 1.3% 0;
+    padding: 0.5% 0;
     align-items: center;
     justify-content: space-around;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: -3px 0px 20px 5px;
 }
 
 ul {
@@ -17,6 +27,7 @@ ul {
     justify-content: space-around;
     list-style: none;
     padding: 0;
+    color: white;
 }
 
 li {
@@ -30,11 +41,33 @@ li {
 
 }
 
-.loginCadastro span  {
+.loginCadastro span {
     margin-right: 10%;
+    color: white;
+}
+
+.header .branding img {
+    height: 4.7rem;
+    margin-right: 5%;
 }
 
 .branding {
     display: flex;
     align-items: center;
+    color: white;
+}
+
+/* Bloco Header - Fim */
+
+section.conteudo {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.conteudo div {
+    margin: 10% 0;
 }
