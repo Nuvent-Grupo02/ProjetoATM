@@ -93,3 +93,37 @@ section.conteudo div {
 section.conteudo img {
     z-index: 2;
 }
+
+/* SOBRE */
+
+.conteudo .sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.conteudo .sobre .item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    /*border: 1px solid #000;*/
+
+    width: 300px;
+    height: 360px;
+
+    padding: 15px;
+
+    box-shadow: #bbbaba 2px 5px 5px 3px;
+
+}
+
+.conteudo .sobre .item img{
+    width: 200px;
+    object-fit: cover;
+}
+.conteudo .sobre .item p{
+    text-align: justify;
+    margin-top: 10px;
+}
