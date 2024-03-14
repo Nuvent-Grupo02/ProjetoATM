@@ -60,6 +60,14 @@ li:hover {
     border-radius: 4px;
     border: solid #2781bc;
     border-width: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.loginCadastro span:hover {
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+    transform: scale(110%);
+    transition: all 0.2s ease-in-out;
 }
 
 .header .branding img {
@@ -100,7 +108,10 @@ section.conteudo div {
     color: white;
     transform: translate(0, 0.4px);
     box-shadow: 0 -400px 0 200px #2781bc;
-    z-index: 2;
+}
+
+.banner h1 {
+    text-align: center;
 }
 
 section.conteudo img {
@@ -109,34 +120,44 @@ section.conteudo img {
 
 /* SOBRE */
 
-.conteudo .sobre{
+.conteudo .sobre {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 80%;
 }
 
-.conteudo .sobre .item{
+.conteudo .sobre .item {
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    /*border: 1px solid #000;*/
+    border: solid rgb(159, 159, 159);
+    border-width: 2px;
+    border-radius: 7px;
+
 
     width: 300px;
     height: 360px;
 
     padding: 15px;
 
-    box-shadow: #bbbaba 2px 5px 5px 3px;
-
+    box-shadow: #bbbaba 0px 0px 5px 1px;
 }
 
-.conteudo .sobre .item img{
+.conteudo .sobre .item img {
     width: 200px;
     object-fit: cover;
 }
-.conteudo .sobre .item p{
-    text-align: justify;
+
+.conteudo .sobre .item p {
+    text-align: center;
+    line-height: 130%;
     margin-top: 10px;
+}
+
+.conteudo .sobre .item {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(234, 234, 234) 100%); 
+    
 }
