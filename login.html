@@ -28,7 +28,7 @@
 
             
         <div class="input-email"> 
-            <p>Email</p>
+            <p>E-mail</p>
             <input type="text" id="email_usuario">
         </div>
             
@@ -47,10 +47,66 @@
                 Usar uma conta Gmail
             </button>
 
-            <span>Ainda não tem uma conta? <a href="#">Cadastrar</a></span>
+            <span>Ainda não tem uma conta? <b onclick="acessarCadastrar()">Cadastrar</b></span>
         </div>
         
     </div>
 
+
+
+    <div class="bloco-cadastro">
+        <div class="nuvent">
+            <img src="assets/logo-nuvent.png" alt="logo-nuvent">
+            <h2>Nuvent</h2>
+        </div>
+
+        <div class="bem-vindo">
+            <a href="index.html"><img src="assets/seta-esquerda.png" alt="seta-esquerda"></a>
+            <h1>Bem vindo(a)!</h1>
+        </div>
+
+        <span class="frase">Crie uma conta para acessar</span>
+
+            
+        <div class="cadastrar-email"> 
+            <p>E-mail</p>
+            <input type="text" id="email_cadastro">
+        </div>
+
+        <div class="confirmar-email"> 
+            <p>Confirmar e-mail</p>
+            <input type="text" id="confirmar_email_cadastro">
+        </div>
+            
+            
+        <div class="cadastrar-senha">
+            <p>Senha</p>
+            <input type="password" id="senha_cadastro">
+        </div>
+
+        <div class="confirmar-senha">
+            <p>Confirmar senha</p>
+            <input type="password" id="confirmar_senha_cadastro">
+        </div>
+
+        <div class="links">
+            <button onclick="cadastrar()" class="button-entrar">
+                Cadastrar
+            </button>
+
+            <button onclick="entrarComGmail()" class="button-entrar-gmail">
+                Usar uma conta Gmail
+            </button>
+
+            <span>Já tem uma conta? <a href="#">Entrar</a></span>
+        </div>
+    </div>
+
 </body>
 </html>
+
+<script>
+    function acessarCadastrar() {
+        
+    }
+</script>
