@@ -109,7 +109,7 @@ section.conteudo div {
 
 .banner {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 50vh;
@@ -121,14 +121,27 @@ section.conteudo div {
     box-shadow: 0 -400px 0 200px #2781bc;
 }
 
-.texto h1, .texto p {
-    margin: 2% 10%;
+.textoBanner h1, .textoBanner p {
+    margin: 2% 0;
+    margin-right: 5%;
     line-height: 145%;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.textoBanner h1 {
+    font-size: 30px;
 }
 
 section.conteudo img {
     z-index: 2;
+}
+
+.textoBanner {
+    width: 35%;
+}
+
+.logoBanner img {
+    height: 45vh;
 }
 
 /* SOBRE */
