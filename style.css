@@ -98,7 +98,6 @@ section.conteudo {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 section.conteudo div {
@@ -111,7 +110,6 @@ section.conteudo div {
 .banner {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
     height: 50vh;
@@ -126,7 +124,7 @@ section.conteudo div {
 .texto h1, .texto p {
     margin: 2% 10%;
     line-height: 145%;
-    
+    font-size: 22px;
 }
 
 section.conteudo img {
