@@ -81,6 +81,10 @@ li:hover {
     color: white;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+}
 /* Bloco Header - Fim */
 
 section.conteudo {

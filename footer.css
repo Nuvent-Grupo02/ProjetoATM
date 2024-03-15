@@ -3,13 +3,15 @@
     font-family: "Roboto", sans-serif;
 }
 .footer{
-    height: 400px;
+    
     background-color: #2781bc;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    height: 60vh;
 }
 .footer .conteudo{
     display: flex;
