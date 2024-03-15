@@ -3,6 +3,11 @@
     font-family: "Roboto", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Bloco Header - Início */
 
 .header {
@@ -97,8 +102,12 @@ section.conteudo div {
     margin-top: 5%;
 }
 
+/* BANNER */
+
 .banner {
     display: flex;
+    flex-direction: column;
+
     align-items: center;
     justify-content: center;
     height: 50vh;
@@ -110,8 +119,10 @@ section.conteudo div {
     box-shadow: 0 -400px 0 200px #2781bc;
 }
 
-.banner h1 {
-    text-align: center;
+.texto h1, .texto p {
+    margin: 2% 10%;
+    line-height: 145%;
+    
 }
 
 section.conteudo img {
