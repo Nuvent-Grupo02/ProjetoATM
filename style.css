@@ -137,11 +137,31 @@ section.conteudo img {
     
 }
 
+.conteudo .sobre .sobre_introducao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+}
+
+.conteudo .sobre .sobre_introducao p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.conteudo .sobre .sobre_introducao button{
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
 .conteudo .sobre_missao{
     
     display: flex;
     justify-content: space-around;
+    align-items: start;
     width: 80%;
+    height: auto;
+    margin-top: 0;
 }
 
 .conteudo .sobre .item {
@@ -152,6 +172,7 @@ section.conteudo img {
     border: solid rgb(159, 159, 159);
     border-width: 2px;
     border-radius: 7px;
+    margin-top: 0;
 
 
     width: 300px;
@@ -164,6 +185,7 @@ section.conteudo img {
 
 .conteudo .sobre #facaParte{
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .conteudo .sobre .item img {
     width: 200px;
