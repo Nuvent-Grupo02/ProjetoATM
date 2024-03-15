@@ -8,6 +8,9 @@ body{
 
     font-family: "Roboto", sans-serif;
     font-style: normal;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -39,7 +42,7 @@ body{
     height: 88px;
 }
 
-.bloco-login .nuvent img{
+.bloco-login .nuvent img, .bloco-cadastro .nuvent img{
     width: 70px;
     height: 70px;
 }
@@ -55,7 +58,7 @@ body{
     padding-left: 3px;
 }
 
-.bloco-login .bem-vindo img{
+.bloco-login .bem-vindo img, .bloco-cadastro .bem-vindo img{
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -129,3 +132,25 @@ a:hover{
     color:#213f72;
     transition: all 0.2s ease-in-out;
 }
+
+
+/* ------------------------------------- CADASTRO -------------------------------- */
+
+.bloco-cadastro{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+
+    width: 550px;
+    height: 745px;
+
+    padding-left: 60px;
+
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(39,179,220,1) 100%);
+    color: white;
+
+}
+
