@@ -37,14 +37,14 @@ ul {
     border-radius: 4px;
 }
 
-a {
+.links a {
     margin: 0 10%;
     padding: 7%;
     transition: all 0.2s ease-in-out;
     text-align: center;
 }
 
-a:hover {
+.links a:hover {
     background-color: #213f72;
     border-radius: 5px;
     box-shadow: 0 0 3px black;
