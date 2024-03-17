@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>dashboards</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+
+<body>
+
+  <main>
+
+    <!-- BARRINHA DO LADO -->
+    <div class="navegacao_lateral">
+
+      <div class="navegacao_lateral_dropdown">
+
+        <label>
+          <a href="graficos.html"><img src="#" alt=""></a>
+          <a href="#">Dashboard</a>
+        </label>
+
+        <label>
+          <img src="#" alt="">
+          <a href="#">Relatórios</a>
+        </label>
+
+        <label>
+          <img src="#" alt="">
+          <a href="#">Gráficos</a>
+        </label>
+
+        <label>
+          <img src="#" alt="">
+          <a href="#">Hitórico</a>
+        </label>
+
+      </div>
+
+    </div>
+    <!-- FIM DA BARRINHA DO LADO -->
+
+
+    <!-- VISÃO GERAL -->
+    <div class="geral">
+
+      <!-- nome + barra de pesquisa -->
+
+      <div class="BemVindo">
+        <div>
+          <span>Bem vindo(a), Fulano</span>
+        </div>
+
+        <div style="display: flex; justify-content: space-evenly; width: 650px; align-items: center;">
+          <input id="input_pesquisa" placeholder="Pesquisar">
+          
+          <img src="assets/logo-nuvent.png" alt="Log-out" style="cursor: pointer;">
+
+        </div>
+      </div>
+
+      <div class="dashboards">
+
+        <!-- cards -->
+        <div class="graphics"> <!-- container com tudo debaixo da barra em cima -->
+
+
+
+          <div class="status"> <!-- div utilizada para manter os cards e o gráfico de barras na mesma coluna -->
+
+
+            <!-- gráfico de barras -->
+            <div class="grafico">
+              <span>MÉDIA DE REGISTRO DE FALHAS POR MÊS</span>
+              <canvas id="myChart">
+                
+              </canvas>
+              
+              
+            </div>
+          </div>
+
+          <div class="rolha"> <!--div para o gráfico de rolhas + dados adicionais-->
+
+                <div style="display: flex; flex-direction: column; align-items: center;" >
+              <div class="perdidos">
+                <span>ALERTAS</span>
+              </div>
+
+              <div class="conteudo"></div>
+
+
+
+                </div>
+
+
+          </div>
+
+
+          <!--
+            <div class="container"> <!-- container contendo os cards -->
+
+
+              <!-- card1 --
+              <div class="card">
+                <div style="margin: 5px;">
+                  <span>Quantidade de sensores</span>
+                  <div style="display: flex; margin-top: 10px;">
+                    
+                    <b id="qtdSensores">2532</b>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card2 --
+              <div class="card">
+                <div style="margin: 5px;">
+                  <span>Status</span>
+                  <div style="display: flex; margin-top: 10px;">
+                    
+                    <b>Tudo ok!</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          -->
+
+
+
+
+        </div> <!--fim da div "dashboards" -->
+        
+
+
+        <!-- FIM DA VISÃO GERAL -->
+      </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Janeiro', 'Fevereivo', 'Março', 'Abril', 'Maio', 'Junho'],
+      datasets: [{
+        label: 'lero lero',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
+    ],
+    fontColor: 'white'
+    ,
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'
+    ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+        indexAxis: 'y',
+    }
+  });
+
+</script>
