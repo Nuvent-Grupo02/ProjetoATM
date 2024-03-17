@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -36,13 +37,14 @@ ul {
     border-radius: 4px;
 }
 
-li {
+a {
     margin: 0 10%;
     padding: 7%;
     transition: all 0.2s ease-in-out;
+    text-align: center;
 }
 
-li:hover {
+a:hover {
     background-color: #213f72;
     border-radius: 5px;
     box-shadow: 0 0 3px black;
