@@ -225,3 +225,24 @@ section.conteudo img {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(234, 234, 234) 100%); 
     
 }
+
+/* SOLUÇÃO */
+.solucao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0 0 0 90px rgb(234, 234, 234);
+}
+
+.solucao h1{
+    text-align: center;
+    margin-bottom: 1.5%;
+}
+
+.solucao p {
+    text-align: justify;
+    margin: 0 10%;
+    line-height: 135%;
+}
