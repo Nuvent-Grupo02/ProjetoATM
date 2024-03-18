@@ -151,7 +151,7 @@ section.conteudo img {
 .conteudo .sobre {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     width: 100%;
     height: 800px;
@@ -159,6 +159,7 @@ section.conteudo img {
     background: rgb(230,230,230);
     background: linear-gradient(0deg, rgba(230,230,230,0.9853992622439601) 0%, rgba(255,255,255,1) 85%);
     
+    margin-top: 0;
 }
 
 .conteudo .sobre .sobre_introducao{
