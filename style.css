@@ -9,6 +9,7 @@ a {
     color: inherit;
 }
 
+
 /* Bloco Header - Início */
 
 .header {
@@ -156,10 +157,10 @@ section.conteudo img {
     width: 100%;
     height: 800px;
 
-    background: rgb(230,230,230);
+    /*background: rgb(230,230,230);
     background: linear-gradient(0deg, rgba(230,230,230,0.9853992622439601) 0%, rgba(255,255,255,1) 85%);
-    
-    margin-top: 0;
+    */
+    margin: 0;
 }
 
 .conteudo .sobre .sobre_introducao{
@@ -171,12 +172,18 @@ section.conteudo img {
 }
 
 .conteudo .sobre .sobre_introducao p{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: justify;
 }
 
-.conteudo .sobre .sobre_introducao button{
-    margin-top: 8px;
+.sobre_headline{
+    text-align: center;
+    font-size: 30px;
+}
+
+.conteudo .sobre button{
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .conteudo .sobre_missao{
@@ -194,18 +201,18 @@ section.conteudo img {
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    border: solid rgb(159, 159, 159);
-    border-width: 2px;
-    border-radius: 7px;
+    /*border: solid rgb(159, 159, 159);
+    border-width: 2px;*/
+    border-radius: 10px;
     margin-top: 0;
-
+    margin-bottom: 0;
 
     width: 300px;
     height: 360px;
 
     padding: 15px;
-
-    box-shadow: #bbbaba 0px 0px 5px 1px;
+    background-color: #fff;
+    box-shadow: #bbbaba 0px 0px 7px 3px;
 }
 
 .conteudo .sobre #facaParte{
@@ -224,28 +231,96 @@ section.conteudo img {
 }
 
 .conteudo .sobre .item {
-    background: rgb(255,255,255);
+   /* background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(234, 234, 234) 100%); 
-    
+    */
 }
 
-/* SOLUÇÃO */
-.solucao {
+/* PROBLEMA */
+.problema {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(234, 234, 234);
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(39,179,220,1) 100%);
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    margin-top: 0;
+    color: #fff;
+    /*background-color: rgb(234, 234, 234);
     box-shadow: 0 0 0 90px rgb(234, 234, 234);
+    */
 }
 
-.solucao h1{
+
+.problema .descricao_problema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    margin: 0;
+}
+.problema .descricao_problema img{
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: #616161 0px 0px 7px 3px;
+}
+.problema .descricao_problema span h1{
+    font-size: 35px;
+}
+
+.problema h1{
     text-align: center;
     margin-bottom: 1.5%;
 }
 
-.solucao p {
+.problema p{
     text-align: justify;
     margin: 0 10%;
     line-height: 135%;
+}
+
+.solucao{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.solucao .primeiro_paragrafo_solucao img{
+    width: 400px;
+    object-fit: cover;
+    margin-left: 20px;
+    box-shadow: #bbbaba 0px 0px 7px 3px;
+    border-radius: 10px;
+}
+.solucao .primeiro_paragrafo_solucao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.solucao .segundo_paragrafo_solucao img{
+    width: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: #bbbaba 0px 0px 7px 3px;
+    border-radius: 10px;
+}
+
+.solucao .segundo_paragrafo_solucao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
